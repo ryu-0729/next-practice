@@ -50,6 +50,12 @@ const Home: NextPage = () => {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
+          <a 
+            href="/event"
+            className={styles.card}
+          >
+            <h2>イベント登録フォーム</h2>
+          </a>
         </div>
       </main>
 
