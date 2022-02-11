@@ -16,7 +16,6 @@ const initialState: Store = {
 
 const Event: NextPage = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
-  console.log(state);
 
   const onChangeTitleHandler = useCallback<ChangeEventHandler<HTMLInputElement>>(e => dispatch({ type: 'title', payload: e.target.value }), []);
   const onChangeBodyHandler = useCallback<ChangeEventHandler<HTMLInputElement>>(e => dispatch({ type: 'body', payload: e.target.value }), []);
